@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Web</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-state=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+
+
+body{
+
+    	 font: 400 15px Lato, sans-serif;
+    }
+	.navbar{
+
+		border-radius: 0;
+		margin-bottom: 0;
+	}
+		.form-group{
+
+		margin-right: 10px;
+	}
+
+	.list1{
+
+		margin: 20px;
+         
+
+	}
+	
+	video{
+
+		border:5px solid blue;
+	}
+
+	.v{
+
+		
+	}
+
+</style>
+</head>
+<body>
+<div class="container">
+<nav class="navbar navbar-inverse">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target="#my">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="index.html" class="navbar-brand"><span class="glyphicon glyphicon-music"></span></a>
+		</div>
+		<div class="collapse navbar-collapse" id="my">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">HOME</a></li>
+				<li class="dropdown"><a href="mp3.html" class="dropdown-toggle" data-toggle="dropdown">MUSIC <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                  	<li><a href="hindi.html">Hindi Songs</a></li>
+                  	<li><a href="english.html">English Songs</a></li>
+                  	<li><a href="punjabi.html">Punjabi Songs</a></li>
+                  </ul>
+				</li>
+				<li><a href="video.html">VIDEOS</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+			</ul>
+			<form class="navbar-form navbar-right" role="search">
+				<div class="form-group input-group">
+					<input type="text" name="name" class="form-control" placeholder="Search">
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-default">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
+				</div>
+			</form>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row content">
+		<div class="col-sm-3 sidenav">
+			<h2></h2>
+			<div class="row">
+				<div class="col-sm-12">
+                    <div class="well" style="padding-top:0;">
+                    	<h3 style="padding-bottom:10px;" class="text-center">Video Section</h3>
+
+                    	<h4 class="text-center">Songs Update</h4>
+
+                    	<ul style="list-style-type: none;padding:10px;">
+                     		<li class="list1"><a  href="#" >Tamma Tamma-<span class="v">Badrinath Ki Dulhania</span></a></li>
+                     		<li class="list1"><a  href="#">Zaalima-<span class="v">Raees movie</span></a></li>
+                     		<li class="list1"><a   href="#">Kis se pyar-<span class="v">kaabil movie</span></a></li>
+                     		<li class="list1"><a   href="#">Pehli Dafa-<span class="v">atif aslam</span></a></li>
+                     		<li class="list1"><a  href="#">Kaabil Hoon-<span class="v">Kaabil movie</span></a></li>
+                     		</ul>
+
+
+
+                    </div>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-8">
+			<h3>Popular Punjabi Videos</h3>
+			
+				<div class="row" >
+					<div class="col-sm-3">
+						<div class="thumbnail text-center">
+							<img src="pun/vid1.jpg" >
+							<p class="text-center">Dj wale Babu</p> <!--modal-->
+							<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#mee">Watch</button>
+							<div class="modal fade" id="mee" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										 <button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Dj wale Babu</h4>
+										</div>
+										<div class="modal-body">
+											<video width="400" controls>
+												<source src="pun/video/Dj wale babu.mp4" type="video/mp4">
+											</video>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="pun/video/Dj wale babu.mp4" class="btn btn-success btn-xs" download>Download</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail text-center">
+							<img src="pun/vid2.jpg">
+							<p class="text-center">Jimmy choo</p>
+							<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#me1">Watch</button>
+							<div class="modal fade" id="me1" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Jimmy choo</h4>
+										</div>
+										<div class="modal-body">
+											<video width="400" controls>
+												<source src="pun/video/jimmy choo.mp4" type="video/mp4">
+											</video>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="pun/video/jimmy choo.mp4" class="btn btn-success btn-xs" download>Download</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail text-center">
+							<img src="pun/vid3.jpg">
+							<p class="text-center">Gucchi</p>
+							<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#me2">Watch</button>
+							<div class="modal fade" id="me2" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Gucchi</h4>
+										</div>
+										<div class="modal-body">
+											<video width="400" controls>
+												<source src="pun/video/gucchi.mkv" type="video/mp4">
+											</video>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="pun/video/gucchi.mkv" class="btn btn-success btn-xs" download>Download</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row" >
+					<div class="col-sm-3">
+						<div class="thumbnail text-center">
+							<img src="pun/vid4.jpg" >
+							<p class="text-center">Laddu</p>
+							<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#me3">Watch</button>
+							<div class="modal fade" id="me3" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Laddu</h4>
+										</div>
+										<div class="modal-body">
+											<video width="400" controls>
+												<source src="pun/video/Laddu_-_Garry_Sandhu_2.mp4" type="video/mp4">
+											</video>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="pun/video/Laddu_-_Garry_Sandhu_2.mp4" class="btn btn-success btn-xs" download>Download</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail text-center">
+							<img src="pun/vid5.jpg">
+							<p class="text-center">Backbone</p>
+							<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#me4">Watch</button>
+							<div class="modal fade" id="me4" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Backbone</h4>
+										</div>
+										<div class="modal-body">
+											<video width="400" controls>
+												<source src="pun/video/Hardy Sandhu - Backbone - Jaani - B Praak - Zenith Sidhu - Latest Romantic Song 2017.mkv" type="video/mp4">
+											</video>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="pun/video/Hardy Sandhu - Backbone - Jaani - B Praak - Zenith Sidhu - Latest Romantic Song 2017.mkv" class="btn btn-success btn-xs" download>Download</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail text-center">
+							<img src="pun/vid6.jpg">
+							<p class="text-center">Shadhi dot com</p>
+<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#me5">Watch</button>
+							<div class="modal fade" id="me5" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Shadhi dot com</h4>
+										</div>
+										<div class="modal-body">
+											<video width="400" controls>
+												<source src="pun/video/-Sharry Mann- Munda Bhal di (Official Song) Latest Punjabi Songs - T-Series.mkv" type="video/mp4">
+											</video>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="pun/video/-Sharry Mann- Munda Bhal di (Official Song) Latest Punjabi Songs - T-Series.mkv" class="btn btn-success btn-xs" download>Download</a>
+						</div>
+					</div>
+				</div>
+
+								<div class="row" >
+					<div class="col-sm-3">
+						<div class="thumbnail text-center">
+							<img src="pun/vid7.jpg" >
+							<p class="text-center">Suit</p>
+							<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#me6">Watch</button>
+							<div class="modal fade" id="me6" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Suit</h4>
+										</div>
+										<div class="modal-body">
+											<video width="400" controls>
+												<source src="pun/video/Suit Full Video Song - Guru Randhawa Feat. Arjun - T-Series.mkv" type="video/mp4">
+											</video>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="pun/video/Suit Full Video Song - Guru Randhawa Feat. Arjun - T-Series.mkv" class="btn btn-success btn-xs" download>Download</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail text-center">
+							<img src="pun/vid8.jpg">
+							<p class="text-center">Lakdi ki katti</p>
+<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#me7">Watch</button>
+							<div class="modal fade" id="me7" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Lakdi ki katti</h4>
+										</div>
+										<div class="modal-body">
+											<video width="400" controls>
+												<source src="pun/video/Lakdi Ki Kaathi - Harshit Tomar Feat.Raftaar - JSL - Latest Punjabi Song 2016 -.mp4" type="video/mp4">
+											</video>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="pun/video/Lakdi Ki Kaathi - Harshit Tomar Feat.Raftaar - JSL - Latest Punjabi Song 2016 -.mp4" class="btn btn-success btn-xs" download>Download</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail text-center">
+							<img src="pun/vid9.jpg">
+							<p class="text-center">Patake</p>
+							<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#me8">Watch</button>
+							<div class="modal fade" id="me8" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Patake</h4>
+										</div>
+										<div class="modal-body">
+											<video width="400" controls>
+												<source src="pun/video/PATAKE (Full Video) -- SUNANDA SHARMA -- Latest Punjabi Songs 2016 -- AMAR AUDIO.mkv" type="video/mp4">
+											</video>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="pun/video/PATAKE (Full Video) -- SUNANDA SHARMA -- Latest Punjabi Songs 2016 -- AMAR AUDIO.mkv" class="btn btn-success btn-xs" download>Download</a>
+						</div>
+					</div>
+				</div>
+
+              								<div class="row" >
+					<div class="col-sm-3">
+						<div class="thumbnail text-center">
+							<img src="pun/vid10.jpg" >
+							<p class="text-center">Flying car</p>
+<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#me9">Watch</button>
+							<div class="modal fade" id="me9" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Flying car</h4>
+										</div>
+										<div class="modal-body">
+											<video width="400" controls>
+												<source src="pun/video/Flying_Car_-_Ninja.mp4" type="video/mp4">
+											</video>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="pun/video/Flying_Car_-_Ninja.mp4" class="btn btn-success btn-xs" download>Download</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail text-center">
+							<img src="pun/vid11.jpg">
+							<p class="text-center">Bhabhi Thodi ede aa</p>
+							<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#me10">Watch</button>
+							<div class="modal fade" id="me10" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Bhabhi Thodi ede aa</h4>
+										</div>
+										<div class="modal-body">
+											<video width="400" controls>
+												<source src="pun/video/Bhabi Thodi End Aa (Full Video) - Resham Anmol - Latest Punjabi Song 2016 - Speed Records.mp4" type="video/mp4">
+											</video>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="pun/video/Bhabi Thodi End Aa (Full Video) - Resham Anmol - Latest Punjabi Song 2016 - Speed Records.mp4" class="btn btn-success btn-xs" download>Download</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail text-center">
+							<img src="pun/vid12.jpg">
+							<p class="text-center">Party Mere Ghr pe</p>
+<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#me11">Watch</button>
+							<div class="modal fade" id="me11" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Party Mere Ghr pe</h4>
+										</div>
+										<div class="modal-body">
+											<video width="400" controls>
+												<source src="pun/video/Party_Mere_Ghar_Pe_-_Lil_Golu.mp4" type="video/mp4">
+											</video>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="pun/video/Party_Mere_Ghar_Pe_-_Lil_Golu.mp4" class="btn btn-success btn-xs" download>Download</a>
+						</div>
+					</div>
+				</div>
+
+												<div class="row" >
+					<div class="col-sm-3">
+						<div class="thumbnail text-center">
+							<img src="pun/vid13.jpg" >
+							<p class="text-center">Sucide</p>
+							<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#me12">Watch</button>
+							<div class="modal fade" id="me12" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Sucide</h4>
+										</div>
+										<div class="modal-body">
+											<video width="400" controls>
+												<source src="pun/video/Suicide_-_Sukhe_Muzical_Doctorz.mp4" type="video/mp4">
+											</video>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="pun/video/Suicide_-_Sukhe_Muzical_Doctorz.mp4" class="btn btn-success btn-xs" download>Download</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail text-center">
+							<img src="pun/vid14.jpg">
+							<p class="text-center">Pegpug</p>
+<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#me13">Watch</button>
+							<div class="modal fade" id="me13" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Pegpug</h4>
+										</div>
+										<div class="modal-body">
+											<video width="400" controls>
+												<source src="pun/video/Peg Pug Deep Karan HD.mp4" type="video/mp4">
+											</video>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="pun/video/Peg Pug Deep Karan HD.mp4" class="btn btn-success btn-xs" download>Download</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail text-center">
+							<img src="pun/vid15.jpg">
+							<p class="text-center">3 Peg</p>
+							<button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#me14">Watch</button>
+							<div class="modal fade" id="me14" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">3 Peg</h4>
+										</div>
+										<div class="modal-body">
+											<video width="400" controls>
+												<source src="pun/video/-3 Peg Sharry Mann- (Full Video) - Mista Baaz - Parmish Verma - Latest Punjabi Songs 2016 - T-Series.mkv" type="video/mp4">
+											</video>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="pun/video/-3 Peg Sharry Mann- (Full Video) - Mista Baaz - Parmish Verma - Latest Punjabi Songs 2016 - T-Series.mkv" class="btn btn-success btn-xs" download>Download</a>
+						</div>
+					</div>
+				</div>
+
+
+			
+		</div>
+		<div class="col-sm-1"></div>
+	</div>
+</div>
+</div>
+</body>
+</html>

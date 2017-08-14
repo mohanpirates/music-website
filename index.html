@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Web</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-state=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<script src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.cycle.all.js"></script>
+<style type="text/css">
+
+    body{
+
+    	 font: 400 15px Lato, sans-serif;
+
+    	 background-color:#F2F4F4;
+    }
+	.navbar{
+
+		border-radius: 0;
+		margin-bottom: 0;
+	}
+	.carousel-inner{
+
+      width:70%;
+      margin:0 auto;
+       
+	}
+	.thumb{
+         width:80%;
+         
+         
+         transition: width 0.3s;
+        margin:0 auto;
+
+	}
+	.order{
+
+		padding: 20px ;
+		margin:20px;
+
+	}
+	.unorder{
+
+
+
+		list-style-type: none;
+		padding:10px;
+
+	}
+	.list{
+         padding: 15px;
+         font-size: 16px;
+         border-bottom: dotted 1px;
+          
+
+	}
+	.list2{
+
+		padding: 15px;
+        
+
+	}
+
+	.an{
+
+		color:#404040;
+
+		text-decoration:none;
+
+	}
+	footer{
+
+		background-color:#7F8C8D;
+
+          
+		color: white;
+	}
+
+	.week{
+
+		background-color:grey;
+		padding:10px;
+		color:white;
+		text-align:center;
+		border-radius:10px;
+	}
+
+	.demand{
+
+		border-radius: 35px;
+		padding:8px;
+        background-color:grey;
+		width:460px;
+		height:100px;
+	}
+
+	.img-circle{
+
+		margin:10px;
+	}
+
+	.panel{
+
+		border:2px solid #E5E5E5;
+	}
+
+	a{
+
+		color:black;
+		text-decoration:none;
+	}
+	.thumb:hover{
+
+		width:125%; 
+	}
+	#sow{
+
+		text-decoration:none;
+	}
+@media screen and (max-width:1280px)
+{
+
+	.pics,.pichead{
+
+		display: none;
+	}
+}
+
+</style>
+</head>
+<body>
+<header style="background-color:#26A69A;color:white;text-align:center;"><img style="margin:0 auto;padding:17px 10px 10px;height:50px;" class="img-responsive" src="webname.png"></header>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target="#my">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<img src="bes3.png" class="img-circle" width="45" height="35">
+			<a href="index.html" style="display:none;" class="navbar-brand"><span class="glyphicon glyphicon-music"></span></a>
+		</div>
+		<div class="collapse navbar-collapse" id="my">
+			<ul class="nav navbar-nav">
+
+				<li ><a href="index.html">HOME</a></li>
+				<li class="dropdown"><a href="mp3.html" class="dropdown-toggle" data-toggle="dropdown">MUSIC <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                  	<li><a href="hindi.html">Hindi Songs</a></li>
+                  	<li><a href="english.html">English Songs</a></li>
+                  	<li><a href="punjabi.html">Punjabi Songs</a></li>
+                  </ul>
+				</li>
+				<li><a href="video.html">VIDEOS</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+			<form class="navbar-form navbar-right" role="search">
+				<div class="form-group input-group">
+					<input type="text" name="name" class="form-control" placeholder="Search">
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-default">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
+				</div>
+			</form>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid"><br>
+
+
+<div class="row">
+
+	<div class="col-sm-3">
+         <div class="well">
+         	<h3 class="week">Songs Of The Week</h3>
+         	<ol class="order">
+         		<li class="list2"><a id="sow" href="top1.html">Tamma Tamma Again</a></li>
+         		<li class="list2"><a id="sow" href="top2.html">The Humma Song</a></li>
+         		
+         		<li class="list2"><a id="sow" href="top3.html">Nashe Si Chadh Gayi</a></li>
+         		<li class="list2"><a id="sow" href="top4.html">Zaalima</a></li>
+         		<li class="list2"><a id="sow" href="top5.html">Enna Sona</a></li>
+         		<li class="list2"><a id="sow" href="top6.html">Udi Udi Jaye</a></li>
+         		<li class="list2"><a id="sow" href="top4.html">Zaalima</a></li>
+         		<li class="list2"><a id="sow" href="top5.html">Enna Sona</a></li>
+         		<li class="list2"><a id="sow" href="top6.html">Udi Udi Jaye</a></li>
+         		<li class="list2"><a id="sow" href="top4.html">Zaalima</a></li>
+         		<li class="list2"><a id="sow" href="top5.html">Enna Sona</a></li>
+         		<li class="list2"><a id="sow" href="top6.html">Udi Udi Jaye</a></li>
+         		<li class="list2"><a id="sow" href="top4.html">Zaalima</a></li>
+         		<li class="list2"><a id="sow" href="top5.html">Enna Sona</a></li>
+         		<li class="list2"><a id="sow" href="top6.html">Udi Udi Jaye</a></li>
+         	</ol>
+         </div>
+
+	</div>
+
+	<div class="col-sm-6">
+
+	<div class="row">
+
+<div class="col-sm-12">
+
+	<h5 class="pichead" style="background-color:teal;width:640px;margin-bottom:0;color:white;padding:5px;">Bollywood Songs/Album</h5>
+
+<div class="pics" style="width:100%;height:auto;background-color:black;">
+
+	<a href="album2.html"><img  src="raees.jpg" width="640" height="250"></a>
+	<a href="album1.html"><img src="kaabil.jpg" width="640" height="250"></a>
+<a href="album3.html"><img src="jolly.jpg" width="640" height="250"></a>
+	</div>
+
+</div>
+</div>
+	
+<h4 style="background-color:#B2B2B2;border-radius:20px;padding:12px;color:white;">Bollywood Movie Album</h4><br>
+              <div class="row text-center">
+                     <div class="col-sm-4 kb">
+                            
+                                  <a href="album1.html"> <img src="kaabil.jpg" width="80"  class="img-responsive thumb"></a>
+                                   <a href="album1.html">Kaabil </a>
+                              
+                     </div>
+                     <div class="col-sm-4">
+                     <a href="album2.html">
+                     <img src="raees.jpg" width="80"  class="img-responsive thumb"></a><a href="album2.html">Raees</a>
+                     </div>
+                     <div class="col-sm-4"><a href="album3.html"><img src="jolly.jpg" width="80"  class="img-responsive thumb"></a>
+                     <a href="album3.html">Jolly llb-2</a>
+                     </div>
+
+              </div><br>
+              <div class="row text-center">
+<div class="col-sm-4">
+                            
+                                 <a href="album4.html">  <img src="dangal.jpg" width="80"  class="img-responsive thumb"></a>
+                                   <a href="album4.html">Dangal</a>
+                              
+                     </div>
+                     <div class="col-sm-4"><a href="album5.html"><img src="ok.jpg" width="80" class="img-responsive thumb"></a><a href="album5.html">Ok Jaanu</a>
+                     </div>
+                     <div class="col-sm-4"><a href="album6.html"><img src="rangoon.jpg" width="80"  class="img-responsive thumb"></a><a href="album6.html">Rangoon</a>
+                     </div>
+              </div><br>
+              <div class="row text-center">
+<div class="col-sm-4">
+                            
+                                  <a href="album7.html"> <img src="commando.jpg" width="80"  class="img-responsive thumb"></a>
+                                   <a href="album7.html">Commando</a>
+                              </div>
+                     
+                     <div class="col-sm-4"><a href="album8.html"><img src="aedil.png" width="80"  class="img-responsive thumb"></a><a href="album8.html">Ae Dil Hai Mushkil</a></div>
+
+                     <div class="col-sm-4"><a href="album9.html"><img src="befikre.jpg" width="80"  class="img-responsive thumb"></a><a href="album9.html">Befikre</a></div>
+              </div><br>
+              <div class="row text-center">
+<div class="col-sm-4">
+                            
+                                  <a href="album10.html"> <img src="dear.jpg" width="80"  class="img-responsive thumb"></a>
+                                   <a href="album10.html">Dear Zindagi</a>
+                              
+                     </div>
+                     <div class="col-sm-4"><a href="album11.html"><img src="force.jpg" width="80"  class="img-responsive thumb"></a><a href="album11.html">Force-2</a></div>
+                     <div class="col-sm-4"><a href="album12.html"><img src="waja.jpg" width="80"  class="img-responsive thumb"></a><a href="album12.html">Wajah Tum Ho</a></div>
+              </div>
+              <br>
+              <div class="row text-center" style="display:none;">
+<div class="col-sm-4">
+                            
+                                   <a href="album10.html"><img src="dear.jpg" width="80"  class="img-responsive thumb"></a>
+                                   <a href="album10.html">Dear Zindagi</a>
+                              
+                     </div>
+                     <div class="col-sm-4"><a href="album11.html"><img src="force.jpg" width="80"  class="img-responsive thumb"></a><a href="album11.html">Force-2</a></div>
+                     <div class="col-sm-4"><a href="album12.html"><img src="waja.jpg" width="80"  class="img-responsive thumb"></a><a href="album12.html">Wajah Tum Ho</a></div>
+              </div>
+
+             <div class="row text-center">
+             	<div class="col-sm-12">
+             		<a href="hindi.html"><h3>More</h3></a>
+             	</div>
+             </div>
+
+
+	</div>
+
+	<div class="col-sm-3">
+	     <div class="row">
+	     	<div class="col-sm-12"></div>
+	     </div>
+	     		<div class="panel">
+			<div class="panel-heading text-center" style="padding-bottom:0px;">
+				<h4>Latest Songs</h4>
+			</div>
+			<div class="panel-body" style="padding-top:0;"></div>
+			
+              <ul class="unorder">
+              	<li class="list"><a id="sow" class="an" href="download.html">Dum Dum - Phillauri Single</a></li>
+              	<li class="list"><a id="sow"  class="an" href="download2.html">Itna Tumhe (Machine) Single</a></li>
+              	<li class="list"><a id="sow" class="an" href="download3.html">Badrinath Ki Dulhania (2017) Album</a></li>
+              	<li class="list"><a id="sow" class="an" href="download4.html">Haaye Dil - Jubin Nautiyal Single</a></li>
+              	<li class="list"><a id="sow" class="an" href="download5.html">Jeena Isi Ka Naam Hai (2017) Album</a></li>
+              	<li class="list"><a id="sow" class="an" href="download6.html">Vichora - Falak Shabir Single</a></li>
+              	<li class="list"><a id="sow" class="an" href="download7.html">Shudai - Neha Bhasin & Raxstar Single</a></li>
+              	<li class="list"><a id="sow" class="an" href="download8.html">Ishq Da Hukka (Luv Shv Pyar Vyar) Single</a></li>
+              	<li class="list"><a id="sow" class="an" href="download9.html">Zindagi Bana Laya (Dushman) Single</a></li>
+              </ul>
+                 
+		</div>
+
+</div>
+
+</div>
+<footer class="container-fluid text-center">
+  <ul class="list-inline" style="list-style-type:none;padding:25px 0px 0px;font-size:18px;">
+    <li><p class="copyright">Copyright © 2014 Wavemuzik.com</p></li>
+  	<li></li>
+  	<li><a href="https://www.facebook.com/Wave-Muzik-1652198608131090/"><i class="fa fa-facebook"  style="color:white;"></i></a></li>
+  	<li><a href=""><i class="fa fa-twitter"  style="color:white;"></i></a></li>
+  	<li><a href=""><i class="fa fa-whatsapp"  style="color:white;"></i></a></li>
+    
+  </ul>
+  	
+</footer>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+    $('.pics').cycle({
+		fx: 'scrollLeft'
+                           
+	});
+});
+</script>
+</body>
+</html>
